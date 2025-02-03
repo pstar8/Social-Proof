@@ -1,7 +1,7 @@
 // Font Family - League Spartan
 @font-face {
     font-family: 'League Spartan';
-    src: url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap);
+    src: url(../League_Spartan/static/LeagueSpartan-Bold.ttf);
 }
 
 $font-family : 'League Spartan';
@@ -9,6 +9,7 @@ $font-color: hsl(300, 43%, 22%);
 $font-size:15px;
 
 body {
+    font-family: 'League  Spartan', sans-serif;
     header {
         display: flex;
         justify-content: space-between;
@@ -27,7 +28,7 @@ body {
         p{
             font-size: $font-size;
             line-height: 1.5rem;
-            // width: 350px;
+            width: 350px;
             }
 
             .ratings{
@@ -71,7 +72,7 @@ body {
         color: hsl(0, 0%, 100%);
         font-size: $font-size;
         width: 100%;
-        // padding: 2rem;
+        padding: 2rem;
     }
 
     main .profile{
@@ -136,10 +137,10 @@ body {
     body{
         display: flex;
         flex-direction: column;
-        // align-items: center;
+        align-items: center;
         justify-content: center;
         min-height: 100vh;
-    padding: 5rem 10rem;
+        padding: 5rem 10rem;
         
     header{
         text-align: left;
@@ -163,8 +164,7 @@ body {
     
         .ratings div:nth-child(3){
             margin-left: 80px ;
-        
-        }
+            }
     } 
     
     main > div {

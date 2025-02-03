@@ -1,6 +1,9 @@
 @font-face {
   font-family: "League Spartan";
-  src: url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap);
+  src: url(../League_Spartan/static/LeagueSpartan-Bold.ttf);
+}
+body {
+  font-family: "League  Spartan", sans-serif;
 }
 body header {
   display: flex;
@@ -19,6 +22,7 @@ body header h1 {
 body header p {
   font-size: 15px;
   line-height: 1.5rem;
+  width: 350px;
 }
 body header .ratings {
   position: relative;
@@ -56,6 +60,7 @@ body main > div {
   color: hsl(0, 0%, 100%);
   font-size: 15px;
   width: 100%;
+  padding: 2rem;
 }
 body main .profile {
   display: flex;
@@ -105,6 +110,7 @@ body main .profile div .title {
   body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: 5rem 10rem;
