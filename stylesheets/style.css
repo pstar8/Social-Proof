@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap);
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "League Spartan";
+  color: hsl(300, 43%, 22%);
+  margin: 1rem 0;
+}
+body header h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 3rem;
+  font-weight: 700;
+  width: 350px;
+}
+body header p {
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+body header .ratings {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+}
+body header .ratings > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem;
+  border-radius: 7px;
+  width: 100%;
+}
+body header .ratings div span {
+  font-weight: 700;
+}
+body main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+body main > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  width: 100%;
+}
+body main .profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+body main .profile img {
+  border-radius: 50%;
+  width: 25%;
+}
+body main .profile div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+body main .profile div .name {
+  color: hsl(0, 0%, 100%);
+}
+body main .profile div .title {
+  color: hsl(333, 80%, 67%);
+}
+
+@media screen and (max-width: 998px) {
+  body {
+    padding: 2rem 2.5rem;
+  }
+  body header {
+    flex-direction: column;
+    text-align: center;
+  }
+  body header .ratings > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  body main {
+    flex-direction: column;
+  }
+  body main > div {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 999px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 5rem 10rem;
+  }
+  body header {
+    text-align: left;
+  }
+  body header p {
+    width: 350px;
+    font-size: 400;
+  }
+  body header .ratings > div {
+    flex-direction: row;
+  }
+  body header .ratings > div span {
+    font-size: 1.2rem;
+  }
+  body header .ratings div:nth-child(2) {
+    margin-left: 40px;
+  }
+  body header .ratings div:nth-child(3) {
+    margin-left: 80px;
+  }
+  body main > div {
+    padding: 2rem;
+  }
+  body main > div:nth-child(2) {
+    margin-top: 40px;
+  }
+  body main > div:nth-child(3) {
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */

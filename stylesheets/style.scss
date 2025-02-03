@@ -1,0 +1,182 @@
+// Font Family - League Spartan
+@font-face {
+    font-family: 'League Spartan';
+    src: url(https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap);
+}
+
+$font-family : 'League Spartan';
+$font-color: hsl(300, 43%, 22%);
+$font-size:15px;
+
+body {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: $font-family;
+        color: $font-color;
+        margin: 1rem 0;
+        
+        h1{
+            color: $font-color;
+            font-size: 3rem;
+            font-weight: 700;
+            width: 350px;
+        }
+    
+        p{
+            font-size: $font-size;
+            line-height: 1.5rem;
+            // width: 350px;
+            }
+
+            .ratings{
+                position: relative;
+                display:grid;
+                gap: 1rem;
+            }
+
+            .ratings > div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                background-color: hsl(300, 24%, 96%);
+                padding: 1rem;
+                border-radius: 7px;
+                width: 100%;
+            }
+
+            .ratings div span {
+                font-weight: 700;
+            }
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    main > div{
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 7px;
+        color: hsl(0, 0%, 100%);
+        font-size: $font-size;
+        width: 100%;
+        // padding: 2rem;
+    }
+
+    main .profile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    main .profile img{
+        border-radius: 50%;
+        width: 25% ;
+    }
+
+    main .profile div{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        font-weight: 600;
+    }
+
+    main .profile div .name{
+        color: hsl(0, 0%, 100%);
+    }
+
+    main .profile div .title{
+     color: hsl(333, 80%, 67%);
+     }
+}
+
+// Mobile Design
+@media screen and (max-width:998px) {
+
+   body{
+    padding: 2rem 2.5rem;
+
+     
+    header{
+        flex-direction: column;
+        text-align: center;
+
+        .ratings > div{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    main > div{
+            padding: 1rem;
+        }
+   }
+}
+
+// Destop Design
+@media screen and (min-width:999px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    padding: 5rem 10rem;
+        
+    header{
+        text-align: left;
+
+        p{
+            width: 350px;
+            font-size: 400;
+        }
+        
+        .ratings >  div{
+            flex-direction: row;
+        }
+
+        .ratings > div span{
+            font-size: 1.2rem;
+        }
+        
+        .ratings div:nth-child(2){
+            margin-left: 40px ;
+        }
+    
+        .ratings div:nth-child(3){
+            margin-left: 80px ;
+        
+        }
+    } 
+    
+    main > div {
+        padding: 2rem;
+    }
+
+    main > div:nth-child(2){
+        margin-top: 40px;
+    }
+
+    main > div:nth-child(3){
+        margin-top: 80px;
+    }
+    }    
+}
