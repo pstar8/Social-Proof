@@ -1,7 +1,7 @@
 // Font Family - League Spartan
 @font-face {
     font-family: 'League Spartan';
-    src: url(../League_Spartan/static/LeagueSpartan-Bold.ttf);
+    src: url(../League_Spartan/static/LeagueSpartan-ExtraBold.ttf);
 }
 
 $font-family : 'League Spartan';
@@ -10,17 +10,18 @@ $font-size:15px;
 
 body {
     font-family: 'League  Spartan', sans-serif;
+
     header {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
         font-family: $font-family;
         color: $font-color;
-        margin: 1rem 0;
+        // margin: 1rem 0;
         
         h1{
             color: $font-color;
-            font-size: 3rem;
+            font-size: 3.25rem;
             font-weight: 700;
             width: 350px;
         }
@@ -29,14 +30,18 @@ body {
             font-size: $font-size;
             line-height: 1.5rem;
             width: 350px;
+            font-weight:300
             }
 
             .ratings{
                 position: relative;
                 display:grid;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: flex-end;
                 gap: 1rem;
             }
-
+            
             .ratings > div{
                 display: flex;
                 flex-direction: row;
@@ -91,7 +96,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        font-weight: 600;
+        font-weight: 800;
     }
 
     main .profile div .name{
@@ -133,17 +138,18 @@ body {
 
 // Destop Design
 @media screen and (min-width:999px) {
-
+    
     body{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         min-height: 100vh;
-        padding: 5rem 10rem;
+        padding: 0rem 10rem;
         
     header{
         text-align: left;
+        gap:10rem;
 
         p{
             width: 350px;

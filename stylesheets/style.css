@@ -1,21 +1,20 @@
 @font-face {
   font-family: "League Spartan";
-  src: url(../League_Spartan/static/LeagueSpartan-Bold.ttf);
+  src: url(../League_Spartan/static/LeagueSpartan-ExtraBold.ttf);
 }
 body {
   font-family: "League  Spartan", sans-serif;
 }
 body header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   font-family: "League Spartan";
   color: hsl(300, 43%, 22%);
-  margin: 1rem 0;
 }
 body header h1 {
   color: hsl(300, 43%, 22%);
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-weight: 700;
   width: 350px;
 }
@@ -23,6 +22,7 @@ body header p {
   font-size: 15px;
   line-height: 1.5rem;
   width: 350px;
+  font-weight: 300;
 }
 body header .ratings {
   position: relative;
@@ -76,7 +76,7 @@ body main .profile div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 body main .profile div .name {
   color: hsl(0, 0%, 100%);
@@ -110,13 +110,14 @@ body main .profile div .title {
   body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 100vh;
-    padding: 5rem 10rem;
+    padding: 0rem 10rem;
   }
   body header {
     text-align: left;
+    gap: 10rem;
   }
   body header p {
     width: 350px;
